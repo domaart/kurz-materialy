@@ -1,0 +1,3 @@
+print("Zaciname")
+cena = 100
+print(f"Cena: {cena} Kč")
