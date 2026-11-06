@@ -7,40 +7,55 @@
 #
 # Spusť ho a napiš kamen.
 
+KAMEN = "kamen"
+KÁMEN = "kámen"
+GÁMEN = "gámen"
+NUZKY = "nuzky"
+NŮŽKY = "nůžky"
+PAPIR = "papir"
+OTAZKA_PRO_UZIVATELE = f"Tvůj tah ({KAMEN}/{NUZKY}/{PAPIR}): "
+
+# i f stringy lze stanovit jako promenne, konstanty
+
 from random import randrange
 
 
 def uklid_vstupu(text):
-    return text.strip().title()
-
+    return text.strip().lower()
+#title jsem zmenila za lower
 
 def tah_pocitace():
     cislo = randrange(1, 4)
     if cislo == 1:
-        return "kamen"
+        return KAMEN
     elif cislo == 2:
-        return "nuzky"
+        return NUZKY
     else:
-        return "papir"
+        return PAPIR
 
+def je_nuzky(tah):
+    return tah == NUZKY or tah == NŮŽKY
+
+def je_kamen(tah)
 
 def je_platny(tah):
-    return tah == "kamen" or tah == "nuzky" or tah == "papir"
+    return je_kamen(tah) or tah == NUZKY or tah == PAPIR
 
 
 def kdo_vyhral(tvuj, pocitacuv):
     if tvuj == pocitacuv:
         return "remiza"
-    vyhrala_kamenem = tvuj == "kamen" and pocitacuv == "papir"
-    vyhrala_nuzkami = tvuj == "nuzky" and pocitacuv == "papir"
-    vyhrala_papirem = tvuj == "papir" and pocitacuv == "kamen"
+    vyhrala_kamenem = tvuj == KAMEN and pocitacuv == NUZKY
+#změnila jsem papir na nuzky
+    vyhrala_nuzkami = tvuj == NUZKY and pocitacuv == PAPIR
+    vyhrala_papirem = tvuj == PAPIR and pocitacuv == KAMEN
     if vyhrala_kamenem or vyhrala_nuzkami or vyhrala_papirem:
         return "vyhra"
     else:
         return "prohra"
 
 
-tvuj_tah = uklid_vstupu(input("Tvůj tah (kamen/nuzky/papir): "))
+tvuj_tah = uklid_vstupu(input(OTAZKA_PRO_UZIVATELE))
 
 if not je_platny(tvuj_tah):
     print("Takový tah neznám.")

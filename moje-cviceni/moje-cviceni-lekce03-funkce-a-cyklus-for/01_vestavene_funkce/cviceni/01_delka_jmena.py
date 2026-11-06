@@ -4,3 +4,5 @@
 # Ulož si do proměnné jmeno své jméno a vypiš, kolik má písmen.
 
 
+jmeno = "Dominika"
+print(len(jmeno))

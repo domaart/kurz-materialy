@@ -6,6 +6,7 @@
 # Často chceme něco zopakovat víckrát. Psát to pořád dokola je zdlouhavé –
 # a co teprve stokrát! Od toho je cyklus: řekne Pythonu „udělej tohle N-krát".
 
+# prázdný print() (zalomí)
 
 # Takhle by to vypadalo bez cyklu – nudné a zbytečně dlouhé:
 print("Ahoj")

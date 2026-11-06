@@ -5,5 +5,9 @@
 #    i s DPH (21 %). Použij dva printy – první nech řádek pokračovat,
 #    druhý ho dokonči.
 cena = 1000
+cena_s_dph = cena * 1.21
 
+print("Cena v Kč bez DPH:", cena, end=", ")
+print("cena v Kč s DPH:", round(cena_s_dph))
 
+#v kodu je treba pouzivat desetinnout tecku misto carky

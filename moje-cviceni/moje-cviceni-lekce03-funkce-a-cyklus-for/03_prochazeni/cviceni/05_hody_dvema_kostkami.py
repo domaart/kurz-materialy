@@ -6,3 +6,6 @@
 #    Každý řádek bude vypadat třeba takhle: 2 + 5 = 7
 
 
+for a in range(1, 7):
+    for b in range(1, 7):
+        print(a, "+", b, "=", a + b)

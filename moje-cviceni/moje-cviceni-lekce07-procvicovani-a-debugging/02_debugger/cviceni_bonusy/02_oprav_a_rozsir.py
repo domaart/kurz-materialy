@@ -22,7 +22,11 @@ for znak in veta.lower():
         continue
     if znak in samohlasky:
         pocet_samohlasek = pocet_samohlasek + 1
-    pocet_souhlasek = pocet_souhlasek + 1
+    else:
+        pocet_souhlasek = pocet_souhlasek + 1
+
+pismena_celkem = pocet_samohlasek + pocet_souhlasek
+
 
 print(f"Samohlásek: {pocet_samohlasek}")
 print(f"Souhlásek: {pocet_souhlasek}")

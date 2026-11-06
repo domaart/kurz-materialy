@@ -5,3 +5,8 @@
 #    Výsledek vypiš (má vyjít 1024).
 
 
+vysledek = 1
+for i in range(10):
+    vysledek = vysledek * 2
+
+print(vysledek)

@@ -4,3 +4,5 @@
 # Cyklem vypiš čísla od 1 do 10, každé na svůj řádek.
 
 
+for i in range(1,11):
+    print(i)

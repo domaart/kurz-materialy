@@ -9,3 +9,14 @@
 #    - jinak vypiš samotné číslo.
 
 
+for i in range(1,31):
+    if i % 15 == 0:
+        print(i, "BumBác")
+    elif i % 3 == 0:
+            print(i, "Bum")
+    elif i % 5 == 0:
+                print(i, "Bác")
+    else:
+        print(i)
+
+# dělitelné 3 i 5 = dělitelné 15, musí být první
