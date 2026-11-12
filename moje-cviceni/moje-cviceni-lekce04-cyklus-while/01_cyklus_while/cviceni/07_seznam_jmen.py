@@ -7,3 +7,11 @@
 #    (Prázdná odpověď z inputu je prázdný text: "")
 
 
+
+while True:
+    jmeno = input("Zadej jméno: ")
+    if jmeno == "":
+        continue
+    if jmeno =="konec":
+        break
+    print(jmeno)

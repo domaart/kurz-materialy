@@ -6,3 +6,8 @@
 #    Použij while True.
 
 
+while True:
+    slovo = input("Napiš slovo:")
+    if slovo == "konec":
+        break
+     print(slovo)
