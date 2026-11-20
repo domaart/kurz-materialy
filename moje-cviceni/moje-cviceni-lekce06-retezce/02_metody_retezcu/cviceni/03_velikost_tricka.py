@@ -7,3 +7,15 @@
 #    Nakonec vypiš objednanou velikost velkým písmenem.
 #
 #    Cyklus while True a break znáš z lekce 4.
+
+velikost = "nezadána"
+
+while True:
+    velikost = input("Zadej velikost trička (S/M/L): ").strip().upper()
+    if velikost == "S" or velikost == "M" or velikost == "L":
+        print("Objednaná velikost je:", velikost)
+        break
+    else:
+        continue
+
+# jde to udělat vyhledáváním in slovo

@@ -14,3 +14,17 @@ polozka2 = "dort"
 cena2 = 84.5
 polozka3 = "čaj"
 cena3 = 45
+
+def radek(nazev, castka):
+    print(f"{nazev:12}{castka:8.2f}")
+
+radek(polozka1, cena1)
+radek(polozka2, cena2)
+radek(polozka3, cena3)
+
+soucet = cena1 + cena2 + cena3
+sleva = soucet * 0.1
+
+if soucet > 150:
+    radek("Sleva:", sleva)
+    radek("Po slevě:", soucet - sleva)

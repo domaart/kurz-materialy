@@ -6,3 +6,8 @@
 #    vyjde, tím líp. Třeba:
 #
 #    Dneska jsem viděla fialový rohlík, jak programuje.
+podstatne_jmeno = input("Zadej podstatné jméno:")
+sloveso = input("Zadej sloveso:")
+pridavne_jmeno = input("Zadej přídavné jméno:")
+
+print(f"Když {podstatne_jmeno} dokáže {sloveso}, tak je {pridavne_jmeno}.")

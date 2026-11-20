@@ -5,5 +5,4 @@
 #    Najdi chybu a oprav ji. Zbytek nech tak, jak je.
 
 jmeno = "pyladies"
-jmeno.upper()
-print(jmeno)
+print(jmeno.upper())

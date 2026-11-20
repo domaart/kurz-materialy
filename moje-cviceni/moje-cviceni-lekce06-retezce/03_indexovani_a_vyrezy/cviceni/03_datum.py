@@ -5,3 +5,7 @@
 #    tedy ve tvaru:  17. 10. 2026
 
 datum = "2026-10-17"
+
+print(f" {datum[-2:]}. {datum[5:7]}. {datum[:4]}.")
+
+# procvicit si range

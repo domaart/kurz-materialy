@@ -5,4 +5,7 @@
 #    aby věta vznikla f-stringem.
 
 vek = 30
-print("Je mi " + vek + " let")
+print("Je mi " + str(vek) + " let")
+
+vek = 30
+print(f"Je mi {vek} let")

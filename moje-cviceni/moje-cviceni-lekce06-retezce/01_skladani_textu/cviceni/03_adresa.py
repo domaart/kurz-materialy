@@ -7,3 +7,11 @@
 jmeno = "Anna Nováková"
 ulice = "Dlouhá 5"
 mesto = "110 00 Praha"
+
+print(f"""
+{jmeno}
+{ulice}
+{mesto}
+""")
+
+print(f"{jmeno}\n{ulice}\n{mesto}")

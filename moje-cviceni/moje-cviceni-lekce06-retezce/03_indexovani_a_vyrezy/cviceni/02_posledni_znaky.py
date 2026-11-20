@@ -5,3 +5,9 @@
 #    kratší než tři znaky, vypiš místo toho, že je moc krátké.
 #
 #    Délku změříš len() z lekce 3, rozhodneš se podmínkou z lekce 2.
+
+slovo = input("Zadej slovo: ")
+if len(slovo) >= 3:
+    print(slovo[-3:])
+else:
+    print("Zadané slovo je moc krátké.")

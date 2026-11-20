@@ -8,3 +8,12 @@
 #    - kolikrát je v něm písmeno "a".
 #
 #    Délku umí len() z lekce 3, zbytek jsou metody z výkladu.
+
+
+slovo = input("Zadej slovo: ")
+print(slovo.upper())
+print(slovo.lower())
+print(len(slovo))
+print(slovo.lower().count("a"))
+
+#print("4.2".isdigit())      # False – tečka není číslice ???
