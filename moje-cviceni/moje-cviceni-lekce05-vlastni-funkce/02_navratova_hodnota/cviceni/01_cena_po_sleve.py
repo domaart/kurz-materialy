@@ -6,3 +6,9 @@
 #    Vypiš cenu 200 Kč se slevou 25 % a cenu 1200 Kč se slevou 10 %.
 
 
+def cena_po_sleve(cena, sleva):
+    sleva = cena * sleva / 100
+    return cena - sleva
+
+print("200 Kč se slevou 25 %:", cena_po_sleve(200, 25))
+print("1200 Kč se slevou 10 %:",cena_po_sleve(1200, 10))

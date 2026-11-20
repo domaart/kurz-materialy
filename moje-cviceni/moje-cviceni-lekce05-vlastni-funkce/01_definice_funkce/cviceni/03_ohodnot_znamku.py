@@ -7,3 +7,15 @@
 #    Zavolej ji v cyklu for pro známky 1 až 5.
 
 
+def ohodnot_znamku(cele_cislo):
+    if cele_cislo == 1:
+        print("Výborně")
+    elif cele_cislo == 2:
+        print("Chvalitebně")
+    elif cele_cislo == 3:
+        print("Dobře")
+    else:
+        print("Ještě zabereme")
+
+for znamka in range(1,6):
+    ohodnot_znamku(znamka)

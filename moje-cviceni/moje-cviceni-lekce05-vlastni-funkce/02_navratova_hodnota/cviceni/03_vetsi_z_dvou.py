@@ -5,3 +5,15 @@
 #    Funkci max nepoužívej.
 
 
+def vetsi(a, b):
+    if a == b:
+        return "Čísla jsou stejná."
+    elif a > b:
+        return a
+    else:
+        return b
+
+
+print(vetsi(1, 10))
+print(vetsi(80, 8))
+print(vetsi(8, 8))

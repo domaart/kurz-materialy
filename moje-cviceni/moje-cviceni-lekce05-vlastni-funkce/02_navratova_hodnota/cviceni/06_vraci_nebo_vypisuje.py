@@ -5,8 +5,10 @@
 #    oprav. Zbytek programu nech tak, jak je.
 
 def obvod_ctverce(strana):
-    print(strana * 4)
+    return strana * 4
 
 
 celkem = obvod_ctverce(3) + obvod_ctverce(5)
 print("Dohromady:", celkem)
+
+# zmenila jsem print() na return

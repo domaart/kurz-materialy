@@ -6,3 +6,9 @@
 #    Vyzkoušej ji na dvou různě dlouhých nadpisech.
 
 
+def nadpis(text):
+    print(text)
+    print("=" * len(text))
+
+text = input("Zadej text: ")
+nadpis(text)

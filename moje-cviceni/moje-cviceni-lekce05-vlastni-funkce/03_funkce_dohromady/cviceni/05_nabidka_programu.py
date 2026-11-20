@@ -14,4 +14,38 @@
 #    Použij cyklus while True.
 #    Zobrazení nabídky i obě akce napiš jako vlastní funkce.
 
+from random import randrange
 
+def hod_kostkou():
+    print(f"Na kostce padlo číslo: {randrange(1,7)}.")
+
+def pozdrav(jmeno):
+    print(f"Zdravím, {jmeno}!")
+
+def vyber():
+    print("""
+Co cheš udělat?
+1 - hodit kostkou
+2 - pozdravit
+3 - konec
+    """)
+
+def co_delat():
+    while True:
+        vyber()
+        cinnost = input("Zadej tvůj výběr: ")
+        if cinnost == "1":
+            hod_kostkou()
+        elif cinnost == "2":
+            jmeno = input("Koho pozdravit? ")
+            pozdrav(jmeno)
+        elif cinnost == "3":
+            print("Ukončuji.")
+            break
+        else:
+            print("Takovou volbu neznám.")
+
+co_delat()
+
+# zopakovat, co dělá return nebo continue nebo break
+# randrange se importuje v programu, ne ve funkci???

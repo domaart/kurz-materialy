@@ -9,3 +9,29 @@
 #    Nahoru na první řádek nezapomeň:  from random import randrange
 
 
+from random import randrange
+pocet = 0
+i = randrange(1, 21)
+
+
+while True:
+    tip = int(input("Hádej číslo od 1 do 20: "))
+    pocet = pocet + 1
+
+    if i == tip
+          print("Trefa!")
+          break
+
+     if pocet == 5:
+            print("Nevyšlo to ani na pátý pokus, bylo to číslo:", i)
+            break
+
+    if tip > i:
+        print("Moc velké.")
+    else:
+        print("Moc malé.")
+    
+
+   
+
+   
